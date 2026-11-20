@@ -1,0 +1,74 @@
+apiVersion: v3.2.0
+kind: DataContract
+id: gold-china-exposure
+name: Australian goods exposure to China
+version: 1.0.0
+status: active
+description:
+  purpose: Stakeholder figures for China goods-export exposure, by state.
+  limitations: >
+    Nominal Australian dollars. Unpublished months for blocked goods are treated
+    as no recorded sales. Natural gas is not published by destination.
+servers:
+  - server: local
+    type: duckdb
+    database: data/warehouse.duckdb
+    schema: gold
+schema:
+  - name: state_shock
+    description: Export income at stake in each state if sales to China fall by 10 percent.
+    properties:
+      - name: state_code
+        logicalType: string
+        required: true
+      - name: state_name
+        logicalType: string
+        required: true
+      - name: total_aud
+        logicalType: number
+        required: true
+      - name: china_aud
+        logicalType: number
+        required: true
+      - name: shock_aud
+        logicalType: number
+        required: true
+    quality:
+      - type: sql
+        description: The amount at stake is a tenth of sales to China.
+        query: |
+          SELECT count(*) FROM state_shock
+          WHERE abs(shock_aud - 0.10 * china_aud) > 1
+        mustBe: 0
+      - type: sql
+        description: Every state and territory is present.
+        query: SELECT count(*) FROM state_shock
+        mustBe: 8
+  - name: concentration_year
+    description: China share and buyer concentration for each calendar year.
+    properties:
+      - name: year
+        logicalType: integer
+        required: true
+      - name: china_share
+        logicalType: number
+        required: true
+      - name: hhi
+        logicalType: number
+        required: true
+      - name: total_aud
+        logicalType: number
+        required: true
+    quality:
+      - type: sql
+        description: Shares and the concentration score stay between 0 and 1.
+        query: |
+          SELECT count(*) FROM concentration_year
+          WHERE china_share < 0 OR china_share > 1 OR hhi < 0 OR hhi > 1
+        mustBe: 0
+      - type: sql
+        description: 2025 China share is in the range this extract supports.
+        query: |
+          SELECT count(*) FROM concentration_year
+          WHERE year = 2025 AND complete AND china_share BETWEEN 0.25 AND 0.45
+        mustBe: 1

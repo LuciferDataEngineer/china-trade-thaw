@@ -1,0 +1,1684 @@
+{
+  "accessed": "21 November 2026, 9:37 AM AEDT",
+  "window_label": "October 2025 to September 2026",
+  "exposure": {
+    "headline": "In the year to September 2026, China bought 35.2% of Australia's goods exports, $191.9 billion out of $544.6 billion.",
+    "means": "China's share was 12% in 2006 and 38.0% in 2019. It fell to 29.1% in 2022, when coal sales stopped, and was 33.6% in 2025. A 10 percent fall in sales to China would put $19.2 billion of export income at stake in a year like the last one. In 2025, iron ore alone was $103.6 billion, 59% of everything sold to China.",
+    "kpis": [
+      {
+        "label": "Share sold to China",
+        "value": "35.2%",
+        "detail": "October 2025 to September 2026",
+        "status": "part"
+      },
+      {
+        "label": "Sales to China",
+        "value": "$191.9 billion",
+        "detail": "of $544.6 billion in goods",
+        "status": "part"
+      },
+      {
+        "label": "Iron ore in 2025",
+        "value": "59%",
+        "detail": "$103.6 billion of China sales",
+        "status": "down"
+      },
+      {
+        "label": "Five biggest buyers",
+        "value": "65%",
+        "detail": "of all goods exports, latest year",
+        "status": "part"
+      },
+      {
+        "label": "If China sales fell 10%",
+        "value": "$19.2 billion",
+        "detail": "export income at stake in one year",
+        "status": "down"
+      }
+    ],
+    "history": [
+      {
+        "year": 2006,
+        "share": 0.12441277920782788,
+        "china_aud": 20373063000.0,
+        "total_aud": 163753781000.0
+      },
+      {
+        "year": 2007,
+        "share": 0.1412947984728778,
+        "china_aud": 23791918000.0,
+        "total_aud": 168384953000.0
+      },
+      {
+        "year": 2008,
+        "share": 0.14543755344860793,
+        "china_aud": 32336719000.0,
+        "total_aud": 222340917000.0
+      },
+      {
+        "year": 2009,
+        "share": 0.2163533399799178,
+        "china_aud": 42525784000.0,
+        "total_aud": 196557095000.0
+      },
+      {
+        "year": 2010,
+        "share": 0.252751663308219,
+        "china_aud": 58421276000.0,
+        "total_aud": 231141015000.0
+      },
+      {
+        "year": 2011,
+        "share": 0.27303087364905426,
+        "china_aud": 71451446000.0,
+        "total_aud": 261697313000.0
+      },
+      {
+        "year": 2012,
+        "share": 0.27474490480866287,
+        "china_aud": 68067260000.0,
+        "total_aud": 247747124000.0
+      },
+      {
+        "year": 2013,
+        "share": 0.3293266836447617,
+        "china_aud": 86269737000.0,
+        "total_aud": 261957932000.0
+      },
+      {
+        "year": 2014,
+        "share": 0.3099097250760531,
+        "china_aud": 82411751000.0,
+        "total_aud": 265921797000.0
+      },
+      {
+        "year": 2015,
+        "share": 0.30140812175455095,
+        "china_aud": 75235151000.0,
+        "total_aud": 249612222000.0
+      },
+      {
+        "year": 2016,
+        "share": 0.31610824483806216,
+        "china_aud": 81703881000.0,
+        "total_aud": 258468048000.0
+      },
+      {
+        "year": 2017,
+        "share": 0.33040514091994433,
+        "china_aud": 99562536000.0,
+        "total_aud": 301334706000.0
+      },
+      {
+        "year": 2018,
+        "share": 0.3418725049554491,
+        "china_aud": 117814595000.0,
+        "total_aud": 344615590000.0
+      },
+      {
+        "year": 2019,
+        "share": 0.38046471318932146,
+        "china_aud": 148373883000.0,
+        "total_aud": 389980668000.0
+      },
+      {
+        "year": 2020,
+        "share": 0.4040998203699059,
+        "china_aud": 146577724000.0,
+        "total_aud": 362726526000.0
+      },
+      {
+        "year": 2021,
+        "share": 0.3883878503789659,
+        "china_aud": 177947461000.0,
+        "total_aud": 458169484000.0
+      },
+      {
+        "year": 2022,
+        "share": 0.29125408502283767,
+        "china_aud": 172965191000.0,
+        "total_aud": 593863571000.0
+      },
+      {
+        "year": 2023,
+        "share": 0.36375767046920915,
+        "china_aud": 203203495000.0,
+        "total_aud": 558623258000.0
+      },
+      {
+        "year": 2024,
+        "share": 0.34561541167300086,
+        "china_aud": 178677038000.0,
+        "total_aud": 516982264000.0
+      },
+      {
+        "year": 2025,
+        "share": 0.33587884419120545,
+        "china_aud": 175878634000.0,
+        "total_aud": 523637130000.0
+      }
+    ],
+    "commodities": [
+      {
+        "sitc": "281",
+        "label": "Iron ore",
+        "aud": 98047880000.0,
+        "share": 0.51098229712673,
+        "confidential": false
+      },
+      {
+        "sitc": "988",
+        "label": "Confidential, not named",
+        "aud": 18868439000.0,
+        "share": 0.09833398033099319,
+        "confidential": true
+      },
+      {
+        "sitc": "971",
+        "label": "Gold, non-monetary",
+        "aud": 15481519000.0,
+        "share": 0.08068284741731403,
+        "confidential": false
+      },
+      {
+        "sitc": "321",
+        "label": "Coal",
+        "aud": 12296591000.0,
+        "share": 0.06408440769966545,
+        "confidential": false
+      },
+      {
+        "sitc": "278",
+        "label": "Other minerals",
+        "aud": 9596411000.0,
+        "share": 0.050012260713359846,
+        "confidential": false
+      },
+      {
+        "sitc": "285",
+        "label": "Alumina",
+        "aud": 3883646000.0,
+        "share": 0.020239849696974954,
+        "confidential": false
+      },
+      {
+        "sitc": "043",
+        "label": "Barley",
+        "aud": 3244654000.0,
+        "share": 0.016909705281760636,
+        "confidential": false
+      },
+      {
+        "sitc": "011",
+        "label": "Beef",
+        "aud": 3162074000.0,
+        "share": 0.01647933475160001,
+        "confidential": false
+      }
+    ],
+    "partners": [
+      {
+        "code": "CHIN",
+        "label": "China",
+        "aud": 191881168000.0,
+        "share": 0.35232088224078534
+      },
+      {
+        "code": "JAP",
+        "label": "Japan",
+        "aud": 59754939000.0,
+        "share": 0.10971849424391826
+      },
+      {
+        "code": "RKOR",
+        "label": "South Korea",
+        "aud": 44414553000.0,
+        "share": 0.0815513823497787
+      },
+      {
+        "code": "HONG",
+        "label": "Hong Kong",
+        "aud": 32151830000.0,
+        "share": 0.05903529371499214
+      },
+      {
+        "code": "USA",
+        "label": "United States",
+        "aud": 27855652000.0,
+        "share": 0.05114690508884279
+      },
+      {
+        "code": "INIA",
+        "label": "India",
+        "aud": 20842883000.0,
+        "share": 0.0382704723112873
+      }
+    ],
+    "shock": 19188116800.0,
+    "gas_aud": 60173452000.0,
+    "confidential_aud": 18868439000.0
+  },
+  "recovery": {
+    "headline": "By 2025, five of the eight blocked groups were back to at least 90 percent of their 2017\u201319 sales to China (Barley, Shellfish, Beef, Cotton and Copper ores). Wine and drinks and Coal were only part of the way back. Timber logs were still well short.",
+    "means": "\u201cBack\u201d means 2025 sales reached at least 90 percent of the 2017\u201319 average. During the blocked years, recorded sales were $41.2 billion below that old average. Coal is most of it, about $26.5 billion. A comparison with goods that were not blocked is in the method note. It also moves for wool, which was not blocked, so these pages use the recorded average.",
+    "wheat": "China's wheat purchases rose from $103 million in 2019 to $3.2 billion in 2023, while barley was blocked. Wheat is not used as a stand-in for a normal year.",
+    "goods": [
+      {
+        "sitc": "043",
+        "plain": "Barley",
+        "short": "Barley",
+        "note": "Extra tariffs from May 2020 were removed in August 2023.",
+        "treat": 2020,
+        "lift": 2023,
+        "pre": 1165487333.3333333,
+        "during": 168324000.0,
+        "y2025": 2418208000.0,
+        "ytd": 2647640000.0,
+        "ytd_months": 9,
+        "ratio": 2.074847088285244,
+        "status": "back",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 1494485000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 1411228000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 590749000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 504972000.0,
+            "prediction": 1131834936.9365416,
+            "low": 1131719412.024493,
+            "high": 1131964602.2012107
+          },
+          {
+            "year": 2021,
+            "aud": 0.0,
+            "prediction": 1613526343.176424,
+            "low": 1613385144.5052617,
+            "high": 1613671197.7547543
+          },
+          {
+            "year": 2022,
+            "aud": 0.0,
+            "prediction": 1748530671.2842607,
+            "low": 1748385900.5579486,
+            "high": 1748641192.510745
+          },
+          {
+            "year": 2023,
+            "aud": 1162405000.0,
+            "prediction": 1628811992.5186005,
+            "low": 1628721030.66972,
+            "high": 1628927740.1842995
+          },
+          {
+            "year": 2024,
+            "aud": 1844426000.0,
+            "prediction": 1287612769.240269,
+            "low": 1287491398.0315473,
+            "high": 1287752578.1795776
+          },
+          {
+            "year": 2025,
+            "aud": 2418208000.0,
+            "prediction": 1319561166.1550546,
+            "low": 1319450546.7918258,
+            "high": 1319685798.7000675
+          }
+        ],
+        "lost": 3988919951.397226,
+        "lost_low": 3988628920.926475,
+        "lost_high": 3989229064.30748,
+        "pre_mape": 0.4043993691454186,
+        "weights": {
+          "281": 0.00019779885154871347,
+          "268": 0.6336683304417674,
+          "022": 0.3661337280365661,
+          "057": 1.4267011768873506e-07
+        },
+        "model_note": "Convex hull assumption may be violated: 4 pre-intervention time points (21",
+        "recorded_gap": 2991490000.0
+      },
+      {
+        "sitc": "112",
+        "plain": "Wine and other alcoholic drinks",
+        "short": "Wine and drinks",
+        "note": "Wine tariffs from November 2020 were removed in March 2024. Beer and spirits sit in the same official group.",
+        "treat": 2021,
+        "lift": 2024,
+        "pre": 1055503666.6666666,
+        "during": 46330333.333333336,
+        "y2025": 722456000.0,
+        "ytd": 553913000.0,
+        "ytd_months": 9,
+        "ratio": 0.6844656468902208,
+        "status": "part",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 844505000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 1083392000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 1238614000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 1000864000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2021,
+            "aud": 62965000.0,
+            "prediction": 1051346494.6510965,
+            "low": 1047735567.7212003,
+            "high": 1054942561.4622768
+          },
+          {
+            "year": 2022,
+            "aud": 36975000.0,
+            "prediction": 1153141556.2144256,
+            "low": 1148940978.080704,
+            "high": 1157338428.583405
+          },
+          {
+            "year": 2023,
+            "aud": 39051000.0,
+            "prediction": 1022624019.4369993,
+            "low": 1018562464.5551383,
+            "high": 1026678163.1950283
+          },
+          {
+            "year": 2024,
+            "aud": 892243000.0,
+            "prediction": 1368021742.9980078,
+            "low": 1367889722.687711,
+            "high": 1368124258.9287271
+          },
+          {
+            "year": 2025,
+            "aud": 722456000.0,
+            "prediction": 1579170590.930848,
+            "low": 1579017307.2892056,
+            "high": 1579316579.7122746
+          }
+        ],
+        "lost": 3088121070.302523,
+        "lost_low": 3076288334.530769,
+        "lost_high": 3103202151.474306,
+        "pre_mape": 0.15758036273358983,
+        "weights": {
+          "281": 0.0023303442852847887,
+          "268": 0.3962093071024632,
+          "022": 0.039727638153793786,
+          "057": 0.5617327104584589
+        },
+        "model_note": "Convex hull assumption may be violated: 3 pre-intervention time points (20",
+        "recorded_gap": 3027520000.0
+      },
+      {
+        "sitc": "321",
+        "plain": "Coal",
+        "short": "Coal",
+        "note": "Informal restrictions from around October 2020 were cleared by early 2023.",
+        "treat": 2021,
+        "lift": 2023,
+        "pre": 13269961666.666666,
+        "during": 12390500.0,
+        "y2025": 9436015000.0,
+        "ytd": 9075198000.0,
+        "ytd_months": 9,
+        "ratio": 0.711080803172378,
+        "status": "part",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 11792087000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 14311531000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 13706267000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 8933629000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2021,
+            "aud": 24781000.0,
+            "prediction": 16039459484.301773,
+            "low": 16039186669.01364,
+            "high": 16039716656.327673
+          },
+          {
+            "year": 2022,
+            "aud": 0.0,
+            "prediction": 15865610323.373611,
+            "low": 15865289234.973032,
+            "high": 15866005154.760843
+          },
+          {
+            "year": 2023,
+            "aud": 9239235000.0,
+            "prediction": 15482487199.543589,
+            "low": 15482214508.125587,
+            "high": 15482821666.535961
+          },
+          {
+            "year": 2024,
+            "aud": 12544808000.0,
+            "prediction": 14550238900.533682,
+            "low": 14550132500.572197,
+            "high": 14550366188.24632
+          },
+          {
+            "year": 2025,
+            "aud": 9436015000.0,
+            "prediction": 15099542717.252449,
+            "low": 15099392194.506187,
+            "high": 15099668893.332108
+          }
+        ],
+        "lost": 31880288807.675392,
+        "lost_low": 31879693314.440434,
+        "lost_high": 31880922310.00641,
+        "pre_mape": 0.27705058090142554,
+        "weights": {
+          "281": 0.2605002566761595,
+          "268": 0.47794682156799007,
+          "022": 0.16822598637229638,
+          "057": 0.0933269353835541
+        },
+        "model_note": "Convex hull assumption may be violated: 7 pre-intervention time points (40",
+        "recorded_gap": 26515142333.333332
+      },
+      {
+        "sitc": "036",
+        "plain": "Lobster and other shellfish",
+        "short": "Shellfish",
+        "note": "Live rock lobster stopped in November 2020 and could restart in December 2024. Prawns and other shellfish are in the same official group.",
+        "treat": 2021,
+        "lift": 2025,
+        "pre": 598739333.3333334,
+        "during": 92704000.0,
+        "y2025": 610584000.0,
+        "ytd": 484570000.0,
+        "ytd_months": 9,
+        "ratio": 1.01978267671296,
+        "status": "back",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 254936000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 698678000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 842604000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 494024000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2021,
+            "aud": 93520000.0,
+            "prediction": 569387633.5734807,
+            "low": 569325308.0937159,
+            "high": 569469586.2472618
+          },
+          {
+            "year": 2022,
+            "aud": 87277000.0,
+            "prediction": 635193782.5141387,
+            "low": 635135878.2404186,
+            "high": 635239720.7069677
+          },
+          {
+            "year": 2023,
+            "aud": 98359000.0,
+            "prediction": 553051428.677483,
+            "low": 552991083.3676906,
+            "high": 553119974.5054785
+          },
+          {
+            "year": 2024,
+            "aud": 91660000.0,
+            "prediction": 815327358.1396165,
+            "low": 815276602.4070556,
+            "high": 815398478.8352027
+          },
+          {
+            "year": 2025,
+            "aud": 610584000.0,
+            "prediction": 969121111.575892,
+            "low": 969062859.0502387,
+            "high": 969195646.6485535
+          }
+        ],
+        "lost": 2202144202.9047184,
+        "lost_low": 2201926732.4250326,
+        "lost_high": 2202426883.0784345,
+        "pre_mape": 0.3532573731389545,
+        "weights": {
+          "281": 0.00015099970609467768,
+          "268": 0.1175576299967318,
+          "022": 7.633711458288083e-05,
+          "057": 0.882215033182591
+        },
+        "model_note": "Convex hull assumption may be violated: 5 pre-intervention time points (6",
+        "recorded_gap": 2024141333.3333335
+      },
+      {
+        "sitc": "247",
+        "plain": "Rough timber logs",
+        "short": "Timber logs",
+        "note": "Log shipments stopped in late 2020 and resumed during 2023.",
+        "treat": 2021,
+        "lift": 2023,
+        "pre": 596071000.0,
+        "during": 1386000.0,
+        "y2025": 127928000.0,
+        "ytd": 56801000.0,
+        "ytd_months": 9,
+        "ratio": 0.21461872830585618,
+        "status": "down",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 586991000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 597813000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 603409000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 509415000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2021,
+            "aud": 2772000.0,
+            "prediction": 757855023.147757,
+            "low": 757601328.2038782,
+            "high": 758056826.7243726
+          },
+          {
+            "year": 2022,
+            "aud": 0.0,
+            "prediction": 837738511.7970614,
+            "low": 837222634.6700335,
+            "high": 838150522.2010666
+          },
+          {
+            "year": 2023,
+            "aud": 3190000.0,
+            "prediction": 765511390.1533322,
+            "low": 765110257.2351131,
+            "high": 765790877.9195638
+          },
+          {
+            "year": 2024,
+            "aud": 87989000.0,
+            "prediction": 701947484.1670465,
+            "low": 701823679.2896475,
+            "high": 702096612.1542429
+          },
+          {
+            "year": 2025,
+            "aud": 127928000.0,
+            "prediction": 773162522.2957519,
+            "low": 773031088.0567205,
+            "high": 773309306.0361465
+          }
+        ],
+        "lost": 1592821534.9448197,
+        "lost_low": 1592019520.0506177,
+        "lost_high": 1593407249.1598985,
+        "pre_mape": 0.28063966678107444,
+        "weights": {
+          "281": 0.0006190163901741287,
+          "268": 0.350982951524928,
+          "022": 0.4609655861512699,
+          "057": 0.1874324459336276
+        },
+        "model_note": "Convex hull assumption may be violated: 3 pre-intervention time points (20",
+        "recorded_gap": 1189370000.0
+      },
+      {
+        "sitc": "011",
+        "plain": "Beef",
+        "short": "Beef",
+        "note": "Some beef plants were suspended from May 2020. It was not a ban on all beef.",
+        "treat": 2020,
+        "lift": 2024,
+        "pre": 1600988333.3333333,
+        "during": 2020674250.0,
+        "y2025": 3485362000.0,
+        "ytd": 2196136000.0,
+        "ytd_months": 9,
+        "ratio": 2.177006494946351,
+        "status": "back",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 832514000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 1298528000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 2671923000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 1924628000.0,
+            "prediction": 2147463060.5288813,
+            "low": 2147105277.0730453,
+            "high": 2147680441.612403
+          },
+          {
+            "year": 2021,
+            "aud": 1678975000.0,
+            "prediction": 2163689555.005775,
+            "low": 2163288938.1504035,
+            "high": 2164191587.326922
+          },
+          {
+            "year": 2022,
+            "aud": 2082241000.0,
+            "prediction": 2223402402.2795444,
+            "low": 2222114991.507469,
+            "high": 2225192813.005161
+          },
+          {
+            "year": 2023,
+            "aud": 2396853000.0,
+            "prediction": 2063290972.5372355,
+            "low": 2062489918.1930597,
+            "high": 2064378314.6297333
+          },
+          {
+            "year": 2024,
+            "aud": 2226380000.0,
+            "prediction": 2733230364.3574576,
+            "low": 2732457159.543692,
+            "high": 2733746248.148414
+          },
+          {
+            "year": 2025,
+            "aud": 3485362000.0,
+            "prediction": 3156825959.2180414,
+            "low": 3156109961.3874474,
+            "high": 3157294782.332399
+          }
+        ],
+        "lost": 515148990.3514367,
+        "lost_low": 512904641.06153065,
+        "lost_high": 518301445.2671435,
+        "pre_mape": 0.2965029079698856,
+        "weights": {
+          "281": 0.3493832156283505,
+          "268": 0.00015255872007317574,
+          "022": 0.0016483473492435938,
+          "057": 0.6488158783023326
+        },
+        "model_note": "Convex hull assumption may be violated: 5 pre-intervention time points (7",
+        "recorded_gap": 0.0
+      },
+      {
+        "sitc": "263",
+        "plain": "Raw cotton",
+        "short": "Cotton",
+        "note": "Restrictions from late 2020 were lifted during 2023.",
+        "treat": 2021,
+        "lift": 2023,
+        "pre": 580508333.3333334,
+        "during": 104972500.0,
+        "y2025": 943934000.0,
+        "ytd": 666590000.0,
+        "ytd_months": 9,
+        "ratio": 1.6260472861428918,
+        "status": "back",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 324618000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 300440000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 1116467000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 246191000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2021,
+            "aud": 102367000.0,
+            "prediction": 1373351747.8341992,
+            "low": 1373289251.5326178,
+            "high": 1373435403.822199
+          },
+          {
+            "year": 2022,
+            "aud": 107578000.0,
+            "prediction": 1227485985.6540573,
+            "low": 1227430054.6954353,
+            "high": 1227547322.6877706
+          },
+          {
+            "year": 2023,
+            "aud": 948475000.0,
+            "prediction": 1277747940.529036,
+            "low": 1277694460.5414078,
+            "high": 1277827210.6045957
+          },
+          {
+            "year": 2024,
+            "aud": 1084798000.0,
+            "prediction": 1179304638.8850014,
+            "low": 1179256616.469842,
+            "high": 1179368484.2295313
+          },
+          {
+            "year": 2025,
+            "aud": 943934000.0,
+            "prediction": 1134762740.7302017,
+            "low": 1134713676.993213,
+            "high": 1134833817.173898
+          }
+        ],
+        "lost": 2390892733.4882565,
+        "lost_low": 2390769232.073578,
+        "lost_high": 2391026359.2974753,
+        "pre_mape": 0.6384232118777888,
+        "weights": {
+          "281": 0.38932762268781285,
+          "268": 0.6106588914100034,
+          "022": 1.1947353896964552e-05,
+          "057": 1.5385482860713767e-06
+        },
+        "model_note": "Control units ['022' (r=-0 Convex hull assumption may be violated: 8 pre-intervention time points (26",
+        "recorded_gap": 951071666.6666667
+      },
+      {
+        "sitc": "283",
+        "plain": "Copper ores",
+        "short": "Copper ores",
+        "note": "Informal restrictions from late 2020 eased during 2023.",
+        "treat": 2021,
+        "lift": 2023,
+        "pre": 2307778000.0,
+        "during": 33811500.0,
+        "y2025": 2997451000.0,
+        "ytd": 1892511000.0,
+        "ytd_months": 9,
+        "ratio": 1.2988472028072025,
+        "status": "back",
+        "annual": [
+          {
+            "year": 2017,
+            "aud": 1970735000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2018,
+            "aud": 2691294000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2019,
+            "aud": 2261305000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2020,
+            "aud": 1966829000.0,
+            "prediction": null,
+            "low": null,
+            "high": null
+          },
+          {
+            "year": 2021,
+            "aud": 0.0,
+            "prediction": 2904835940.4673204,
+            "low": 2901704006.2296267,
+            "high": 2908875096.586814
+          },
+          {
+            "year": 2022,
+            "aud": 67623000.0,
+            "prediction": 2740440857.295776,
+            "low": 2732423157.6218877,
+            "high": 2750570855.470332
+          },
+          {
+            "year": 2023,
+            "aud": 131943000.0,
+            "prediction": 2750375213.2485304,
+            "low": 2745239804.5228953,
+            "high": 2756940332.5365024
+          },
+          {
+            "year": 2024,
+            "aud": 624656000.0,
+            "prediction": 2501370118.7613325,
+            "low": 2500945343.8724904,
+            "high": 2501852322.7858067
+          },
+          {
+            "year": 2025,
+            "aud": 2997451000.0,
+            "prediction": 2407373341.6088023,
+            "low": 2405810054.0076184,
+            "high": 2409254983.4667616
+          }
+        ],
+        "lost": 5577653797.763093,
+        "lost_low": 5566462016.444365,
+        "lost_high": 5591803555.851001,
+        "pre_mape": 0.12402412278645666,
+        "weights": {
+          "281": 0.23165087823643696,
+          "268": 0.725122674156581,
+          "022": 0.04283919314521918,
+          "057": 0.00038725446176346055
+        },
+        "model_note": "Convex hull assumption may be violated: 5 pre-intervention time points (20",
+        "recorded_gap": 4547933000.0
+      }
+    ],
+    "back": [
+      "Barley",
+      "Shellfish",
+      "Beef",
+      "Cotton",
+      "Copper ores"
+    ],
+    "part": [
+      "Wine and drinks",
+      "Coal"
+    ],
+    "down": [
+      "Timber logs"
+    ],
+    "shortfall_total": 41246668333.333336,
+    "placebo": {
+      "lost": 10168808994.377775,
+      "lost_low": 10168624986.259848,
+      "lost_high": 10168992671.098461,
+      "pre_mape": 0.244314648448273
+    }
+  },
+  "states": {
+    "headline": "A 10 percent fall in sales to China would put $13.6 billion at stake in Western Australia, 71% of the national $19.2 billion.",
+    "means": "Western Australia sent 57.1% of its goods exports to China in October 2025 to September 2026. Tasmania's share was 32%, but the income at stake there is $173 million. The map shows the share. The bars show the dollars.",
+    "rows": [
+      {
+        "code": "5",
+        "name": "Western Australia",
+        "total": 239012009000.0,
+        "china": 136455370000.0,
+        "share": 0.570914284060095,
+        "shock": 13645537000.0
+      },
+      {
+        "code": "3",
+        "name": "Queensland",
+        "total": 103084326000.0,
+        "china": 23951345000.0,
+        "share": 0.2323471077455558,
+        "shock": 2395134500.0
+      },
+      {
+        "code": "1",
+        "name": "New South Wales",
+        "total": 102838768000.0,
+        "china": 13964636000.0,
+        "share": 0.13579155285096375,
+        "shock": 1396463600.0
+      },
+      {
+        "code": "2",
+        "name": "Victoria",
+        "total": 38158501000.0,
+        "china": 6845481000.0,
+        "share": 0.17939596212125838,
+        "shock": 684548100.0
+      },
+      {
+        "code": "4",
+        "name": "South Australia",
+        "total": 18689233000.0,
+        "china": 4211398000.0,
+        "share": 0.22533819338653438,
+        "shock": 421139800.0
+      },
+      {
+        "code": "7",
+        "name": "Northern Territory",
+        "total": 16163813000.0,
+        "china": 4050788000.0,
+        "share": 0.2506084424510479,
+        "shock": 405078800.0
+      },
+      {
+        "code": "6",
+        "name": "Tasmania",
+        "total": 5355563000.0,
+        "china": 1732321000.0,
+        "share": 0.3234619777603214,
+        "shock": 173232100.0
+      },
+      {
+        "code": "8",
+        "name": "Australian Capital Territory",
+        "total": 102904000.0,
+        "china": 0.0,
+        "share": 0.0,
+        "shock": 0.0
+      }
+    ],
+    "national_shock": 19188116800.0,
+    "window_label": "October 2025 to September 2026",
+    "kpis": [
+      {
+        "label": "Western Australia at stake",
+        "value": "$13.6 billion",
+        "detail": "if China sales fall by a tenth",
+        "status": "down"
+      },
+      {
+        "label": "WA share of the national hit",
+        "value": "71%",
+        "detail": "of $19.2 billion",
+        "status": "down"
+      },
+      {
+        "label": "WA reliance on China",
+        "value": "57.1%",
+        "detail": "of the state's goods exports",
+        "status": "down"
+      },
+      {
+        "label": "Tasmania at stake",
+        "value": "$173 million",
+        "detail": "32% of state exports, small dollars",
+        "status": "part"
+      }
+    ]
+  },
+  "grow": {
+    "headline": "Coal, Wine and other alcoholic drinks, Rough timber logs, Beef, Raw cotton and Copper ores already have another buyer at least half as large as China. Iron ore, Barley and Lobster and other shellfish do not.",
+    "means": "In 2025 Japan bought $6.5 billion of Australian iron ore. China bought $103.6 billion. Trade promotion can deepen a market that already exists. It cannot replace iron ore sales to China in the next few years.",
+    "cards": [
+      {
+        "sitc": "321",
+        "plain": "Coal",
+        "china": 9436015000.0,
+        "next_label": "Japan",
+        "next_aud": 19595168000.0,
+        "ratio": 2.076635952783034,
+        "serious": true,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 9436015000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "Japan",
+            "aud": 19595168000.0,
+            "code": "JAP"
+          },
+          {
+            "label": "India",
+            "aud": 10447402000.0,
+            "code": "INIA"
+          },
+          {
+            "label": "South Korea",
+            "aud": 6546716000.0,
+            "code": "RKOR"
+          },
+          {
+            "label": "Taiwan",
+            "aud": 4706587000.0,
+            "code": "TAIW"
+          },
+          {
+            "label": "Vietnam",
+            "aud": 3583215000.0,
+            "code": "VIET"
+          }
+        ]
+      },
+      {
+        "sitc": "281",
+        "plain": "Iron ore",
+        "china": 103569598000.0,
+        "next_label": "Japan",
+        "next_aud": 6485662000.0,
+        "ratio": 0.06262129162652538,
+        "serious": false,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 103569598000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "Japan",
+            "aud": 6485662000.0,
+            "code": "JAP"
+          },
+          {
+            "label": "South Korea",
+            "aud": 6351726000.0,
+            "code": "RKOR"
+          },
+          {
+            "label": "Taiwan",
+            "aud": 1672002000.0,
+            "code": "TAIW"
+          },
+          {
+            "label": "Vietnam",
+            "aud": 1410956000.0,
+            "code": "VIET"
+          },
+          {
+            "label": "Indonesia",
+            "aud": 927760000.0,
+            "code": "INDO"
+          }
+        ]
+      },
+      {
+        "sitc": "112",
+        "plain": "Wine and other alcoholic drinks",
+        "china": 722456000.0,
+        "next_label": "United Kingdom",
+        "next_aud": 391304000.0,
+        "ratio": 0.5416302169267055,
+        "serious": true,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 722456000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "United Kingdom",
+            "aud": 391304000.0,
+            "code": "UK"
+          },
+          {
+            "label": "United States",
+            "aud": 326393000.0,
+            "code": "USA"
+          },
+          {
+            "label": "New Zealand",
+            "aud": 211721000.0,
+            "code": "NZ"
+          },
+          {
+            "label": "Canada",
+            "aud": 176808000.0,
+            "code": "CAN"
+          },
+          {
+            "label": "Hong Kong",
+            "aud": 140536000.0,
+            "code": "HONG"
+          }
+        ]
+      },
+      {
+        "sitc": "247",
+        "plain": "Rough timber logs",
+        "china": 127928000.0,
+        "next_label": "India",
+        "next_aud": 166568000.0,
+        "ratio": 1.3020449002563943,
+        "serious": true,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 127928000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "India",
+            "aud": 166568000.0,
+            "code": "INIA"
+          },
+          {
+            "label": "Vietnam",
+            "aud": 7694000.0,
+            "code": "VIET"
+          },
+          {
+            "label": "Thailand",
+            "aud": 5427000.0,
+            "code": "THAI"
+          },
+          {
+            "label": "New Zealand",
+            "aud": 3392000.0,
+            "code": "NZ"
+          },
+          {
+            "label": "South Korea",
+            "aud": 3254000.0,
+            "code": "RKOR"
+          }
+        ]
+      },
+      {
+        "sitc": "011",
+        "plain": "Beef",
+        "china": 3485362000.0,
+        "next_label": "United States",
+        "next_aud": 5854991000.0,
+        "ratio": 1.6798803108543674,
+        "serious": true,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 3485362000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "United States",
+            "aud": 5854991000.0,
+            "code": "USA"
+          },
+          {
+            "label": "Japan",
+            "aud": 2486027000.0,
+            "code": "JAP"
+          },
+          {
+            "label": "South Korea",
+            "aud": 2475787000.0,
+            "code": "RKOR"
+          },
+          {
+            "label": "Canada",
+            "aud": 667204000.0,
+            "code": "CAN"
+          },
+          {
+            "label": "Indonesia",
+            "aud": 581267000.0,
+            "code": "INDO"
+          }
+        ]
+      },
+      {
+        "sitc": "043",
+        "plain": "Barley",
+        "china": 2418208000.0,
+        "next_label": "Saudi Arabia",
+        "next_aud": 212417000.0,
+        "ratio": 0.08784066548452407,
+        "serious": false,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 2418208000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "Saudi Arabia",
+            "aud": 212417000.0,
+            "code": "SAUD"
+          },
+          {
+            "label": "Japan",
+            "aud": 205208000.0,
+            "code": "JAP"
+          },
+          {
+            "label": "Mexico",
+            "aud": 138738000.0,
+            "code": "MEXI"
+          },
+          {
+            "label": "Vietnam",
+            "aud": 85784000.0,
+            "code": "VIET"
+          },
+          {
+            "label": "Thailand",
+            "aud": 59285000.0,
+            "code": "THAI"
+          }
+        ]
+      },
+      {
+        "sitc": "036",
+        "plain": "Lobster and other shellfish",
+        "china": 610584000.0,
+        "next_label": "Hong Kong",
+        "next_aud": 142263000.0,
+        "ratio": 0.23299496875122833,
+        "serious": false,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 610584000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "Hong Kong",
+            "aud": 142263000.0,
+            "code": "HONG"
+          },
+          {
+            "label": "Taiwan",
+            "aud": 32077000.0,
+            "code": "TAIW"
+          },
+          {
+            "label": "Singapore",
+            "aud": 29166000.0,
+            "code": "SING"
+          },
+          {
+            "label": "United States",
+            "aud": 22007000.0,
+            "code": "USA"
+          },
+          {
+            "label": "Vietnam",
+            "aud": 16352000.0,
+            "code": "VIET"
+          }
+        ]
+      },
+      {
+        "sitc": "263",
+        "plain": "Raw cotton",
+        "china": 943934000.0,
+        "next_label": "India",
+        "next_aud": 633476000.0,
+        "ratio": 0.6711020050130624,
+        "serious": true,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 943934000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "India",
+            "aud": 633476000.0,
+            "code": "INIA"
+          },
+          {
+            "label": "Vietnam",
+            "aud": 587178000.0,
+            "code": "VIET"
+          },
+          {
+            "label": "Bangladesh",
+            "aud": 433632000.0,
+            "code": "BADE"
+          },
+          {
+            "label": "Indonesia",
+            "aud": 349716000.0,
+            "code": "INDO"
+          },
+          {
+            "label": "Malaysia",
+            "aud": 194918000.0,
+            "code": "MLAY"
+          }
+        ]
+      },
+      {
+        "sitc": "283",
+        "plain": "Copper ores",
+        "china": 2997451000.0,
+        "next_label": "Japan",
+        "next_aud": 2402638000.0,
+        "ratio": 0.801560392480144,
+        "serious": true,
+        "buyers": [
+          {
+            "label": "China",
+            "aud": 2997451000.0,
+            "code": "CHIN"
+          },
+          {
+            "label": "Japan",
+            "aud": 2402638000.0,
+            "code": "JAP"
+          },
+          {
+            "label": "India",
+            "aud": 1138209000.0,
+            "code": "INIA"
+          },
+          {
+            "label": "South Korea",
+            "aud": 738743000.0,
+            "code": "RKOR"
+          },
+          {
+            "label": "Malaysia",
+            "aud": 156596000.0,
+            "code": "MLAY"
+          },
+          {
+            "label": "Philippines",
+            "aud": 68991000.0,
+            "code": "PHIL"
+          }
+        ]
+      }
+    ],
+    "default": "321",
+    "kpis": [
+      {
+        "label": "Iron ore's next buyer",
+        "value": "6%",
+        "detail": "Japan, against China",
+        "status": "down"
+      },
+      {
+        "label": "Goods with a real second buyer",
+        "value": "6",
+        "detail": "at least half of China's 2025 purchases",
+        "status": "back"
+      },
+      {
+        "label": "Goods without one",
+        "value": "3",
+        "detail": "Iron ore, Barley and Lobster and other shellfish",
+        "status": "part"
+      },
+      {
+        "label": "Coal's largest other buyer",
+        "value": "$19.6 billion",
+        "detail": "Japan",
+        "status": "back"
+      }
+    ]
+  },
+  "fx": {
+    "sentence": "The Australian dollar bought 0.70 US dollars on average in 2019 and 0.64 in 2025, so it was 7 percent weaker. On the latest published day it bought 0.70 US dollars and 4.77 yuan. Export income on these pages is in Australian dollars, the way the ABS publishes it.",
+    "series": [
+      {
+        "year": 2010,
+        "usd": 0.9199416666666668,
+        "cny": 6.216691666666666
+      },
+      {
+        "year": 2011,
+        "usd": 1.040675,
+        "cny": 6.7121
+      },
+      {
+        "year": 2012,
+        "usd": 1.03925,
+        "cny": 6.552583333333332
+      },
+      {
+        "year": 2013,
+        "usd": 0.9600416666666667,
+        "cny": 5.900124999999999
+      },
+      {
+        "year": 2014,
+        "usd": 0.899,
+        "cny": 5.5508750000000004
+      },
+      {
+        "year": 2015,
+        "usd": 0.7464833333333334,
+        "cny": 4.695083333333334
+      },
+      {
+        "year": 2016,
+        "usd": 0.7434083333333334,
+        "cny": 4.949641666666667
+      },
+      {
+        "year": 2017,
+        "usd": 0.7691499999999999,
+        "cny": 5.184400000000001
+      },
+      {
+        "year": 2018,
+        "usd": 0.7452249999999999,
+        "cny": 4.93805
+      },
+      {
+        "year": 2019,
+        "usd": 0.6961583333333333,
+        "cny": 4.8029166666666665
+      },
+      {
+        "year": 2020,
+        "usd": 0.694375,
+        "cny": 4.782366666666666
+      },
+      {
+        "year": 2021,
+        "usd": 0.7496916666666666,
+        "cny": 4.831533333333334
+      },
+      {
+        "year": 2022,
+        "usd": 0.6933583333333333,
+        "cny": 4.6772
+      },
+      {
+        "year": 2023,
+        "usd": 0.6644051999999997,
+        "cny": 4.704353599999999
+      },
+      {
+        "year": 2024,
+        "usd": 0.6603202380952382,
+        "cny": 4.751620634920638
+      },
+      {
+        "year": 2025,
+        "usd": 0.6449051792828686,
+        "cny": 4.6345800796812755
+      }
+    ]
+  },
+  "revision": {
+    "cells": 114,
+    "abs_aud": 2554000000.0,
+    "china": [
+      {
+        "period": "2026-03-01",
+        "older": 17058.0,
+        "newer": 17053.0,
+        "revision": -5.0
+      },
+      {
+        "period": "2026-04-01",
+        "older": 16956.0,
+        "newer": 16948.0,
+        "revision": -8.0
+      },
+      {
+        "period": "2026-05-01",
+        "older": 16499.0,
+        "newer": 16472.0,
+        "revision": -27.0
+      },
+      {
+        "period": "2026-06-01",
+        "older": 18850.0,
+        "newer": 18824.0,
+        "revision": -26.0
+      },
+      {
+        "period": "2026-07-01",
+        "older": 15526.0,
+        "newer": 15546.0,
+        "revision": 20.0
+      },
+      {
+        "period": "2026-08-01",
+        "older": 16069.0,
+        "newer": 16014.0,
+        "revision": -55.0
+      },
+      {
+        "period": "2026-09-01",
+        "older": null,
+        "newer": 17102.0,
+        "revision": null
+      }
+    ],
+    "total_changes": [
+      {
+        "period": "2026-03-01",
+        "revision_million": -5.0
+      },
+      {
+        "period": "2026-04-01",
+        "revision_million": 80.0
+      },
+      {
+        "period": "2026-05-01",
+        "revision_million": 145.0
+      },
+      {
+        "period": "2026-06-01",
+        "revision_million": 128.0
+      },
+      {
+        "period": "2026-07-01",
+        "revision_million": -96.0
+      },
+      {
+        "period": "2026-08-01",
+        "revision_million": -855.0
+      }
+    ]
+  }
+}

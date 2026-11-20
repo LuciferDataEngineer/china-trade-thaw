@@ -94,6 +94,21 @@ def aud_text(value: float) -> str:
     return f"{sign}${amount:.0f}"
 
 
+def aud_compact(value: float) -> str:
+    """One-line KPI and axis form: $191.9bn, $173m."""
+    sign = "-" if value < 0 else ""
+    amount = abs(value)
+    if amount >= 1_000_000_000:
+        return f"{sign}${amount / 1_000_000_000:.1f}bn"
+    if amount >= 10_000_000:
+        return f"{sign}${amount / 1_000_000:.0f}m"
+    if amount >= 1_000_000:
+        return f"{sign}${amount / 1_000_000:.1f}m"
+    if amount >= 1_000:
+        return f"{sign}${amount / 1_000:.0f}k"
+    return f"{sign}${amount:.0f}"
+
+
 def pct_text(share: float) -> str:
     return f"{share * 100:.0f}%"
 

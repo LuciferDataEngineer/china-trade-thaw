@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 
 from china_trade import charts
-from china_trade.metrics import aud_text, pct_text, pct_text_1
+from china_trade.metrics import aud_compact, aud_text, pct_text, pct_text_1
 
 ROOT = Path(__file__).resolve().parents[2]
 SITE = ROOT / "site"
@@ -80,8 +80,9 @@ def _exposure(story: dict) -> str:
     history = charts.line_chart(
         [{"year": row["year"], "value": row["share"] * 100} for row in exposure["history"]],
         chart_id="china-share",
-        y_format=lambda value: f"{value:.0f}%",
+        y_format=_share_tick,
         callouts=[2006, 2019, 2022, 2025],
+        include_zero=True,
     )
     commodities = charts.hbar(
         [
@@ -95,6 +96,7 @@ def _exposure(story: dict) -> str:
         ],
         chart_id="china-goods",
         colour_key="swatch",
+        font=26,
     )
     partners = charts.hbar(
         [
@@ -102,12 +104,14 @@ def _exposure(story: dict) -> str:
             for row in exposure["partners"]
         ],
         chart_id="partners",
+        font=26,
     )
     fx = charts.line_chart(
         [{"year": row["year"], "value": row["usd"]} for row in story["fx"]["series"]],
         chart_id="aud-usd",
         y_format=lambda value: f"{value:.2f}",
         callouts=[2019, 2025],
+        include_zero=False,
     )
     gas = exposure["gas_aud"]
     gas_line = (
@@ -164,8 +168,7 @@ def _exposure(story: dict) -> str:
   <article class="card">
     <h2>Japan is a distant second</h2>
     {partners}
-    <p class="note">{_esc(story["fx"]["sentence"])}</p>
-    {fx}
+    <p class="note">Latest 12 months. The six largest buyers of Australian goods.</p>
     {
         _values(
             "Largest buyers, latest 12 months",
@@ -178,12 +181,18 @@ def _exposure(story: dict) -> str:
     }
   </article>
 </section>
+<section class="card">
+  <h2>Australian dollars per US dollar</h2>
+  {fx}
+  <p class="note">{_esc(story["fx"]["sentence"])}</p>
+</section>
 {_means(exposure["means"])}
 """
 
 
 def _recovery(story: dict) -> str:
     recovery = story["recovery"]
+    ranked = sorted(recovery["goods"], key=lambda good: good["ratio"], reverse=True)
     overview = charts.hbar(
         [
             {
@@ -192,10 +201,11 @@ def _recovery(story: dict) -> str:
                 "display": pct_text(good["ratio"]),
                 "swatch": {"back": "#2ee6c7", "part": "#ffc857", "down": "#ff6b6b"}[good["status"]],
             }
-            for good in recovery["goods"]
+            for good in ranked
         ],
         chart_id="recovery-ratio",
         colour_key="swatch",
+        sorted_desc=True,
     )
     button_html = []
     panel_html = []
@@ -206,6 +216,7 @@ def _recovery(story: dict) -> str:
             f"{_esc(good['short'])}</button>"
         )
         hidden = "" if index == 0 else " hidden"
+        gap_years = _zero_years(good)
         annual = charts.annual_compare(
             [
                 {
@@ -217,8 +228,15 @@ def _recovery(story: dict) -> str:
                 for point in good["annual"]
             ],
             chart_id=f"annual-{good['sitc']}",
+            y_format=lambda value: aud_compact(value * 1_000_000),
+            blocked=gap_years,
         )
-        monthly = charts.spark(good["monthly"], chart_id=f"month-{good['sitc']}")
+        monthly = charts.spark(
+            good["monthly"],
+            chart_id=f"month-{good['sitc']}",
+            y_format=aud_compact,
+            blocked=gap_years,
+        )
         ytd = ""
         if good["ytd"] > good["y2025"]:
             ytd = (
@@ -229,7 +247,9 @@ def _recovery(story: dict) -> str:
             f"""
 <div class="panel" data-panel-id="{good["sitc"]}"{hidden}>
   <h3>{_esc(good["plain"])}: 2025 was {pct_text(good["ratio"])} of the 2017–19 average</h3>
-  <p class="note">{_esc(good["note"])} {_esc(_loss_sentence(good))}{_esc(ytd)}</p>
+  <p class="note">{_esc(good["note"])} {_esc(_loss_sentence(good, recovery["shortfall_total"]))}{
+                _esc(ytd)
+            }</p>
   {annual}
   <p class="note">Bars are recorded sales, in millions of Australian dollars, for each finished year from 2017 to 2025.</p>
   {monthly}
@@ -265,7 +285,7 @@ def _recovery(story: dict) -> str:
 <section class="card">
   <h2>100 percent would mean 2025 matched the years just before the blocks</h2>
   {overview}
-  <p class="note">Green is back to at least 90 percent. Amber is part way. Red is still well short. Beef was not a full ban.</p>
+  <p class="note">Sorted from closest to the old level. Green is back to at least 90 percent. Amber is part way. Red is still well short. Beef was not a full ban.</p>
   {
         _values(
             "2025 China sales against 2017–19",
@@ -277,7 +297,7 @@ def _recovery(story: dict) -> str:
                     aud_text(good["y2025"]),
                     pct_text(good["ratio"]),
                 ]
-                for good in recovery["goods"]
+                for good in ranked
             ],
             ["Good", "2017–19 average", "Blocked years", "2025", "2025 vs old level"],
         )
@@ -295,7 +315,8 @@ def _states(story: dict) -> str:
     states = story["states"]
     features = json.loads((SNAPSHOT / "au_states.geojson").read_text())["features"]
     shares = {row["name"]: row["share"] for row in states["rows"]}
-    drawing = charts.australia_map(features, shares, chart_id="state-map")
+    missing = {row["name"] for row in states["rows"] if row["china"] <= 0}
+    drawing = charts.australia_map(features, shares, chart_id="state-map", missing=missing)
     bars = charts.hbar(
         [
             {
@@ -311,7 +332,9 @@ def _states(story: dict) -> str:
             for row in states["rows"]
         ],
         chart_id="state-shock",
-        label_width=120,
+        font=26,
+        row_h=54,
+        width=700,
     )
     return f"""
 <section class="banner">
@@ -319,15 +342,16 @@ def _states(story: dict) -> str:
   <h1>{_esc(states["headline"])}</h1>
 </section>
 <section class="kpis">{_kpis(states["kpis"])}</section>
-<section class="grid-2">
+<section class="grid-2 states">
   <article class="card">
     <h2>The west depends on China. The dollars are there too</h2>
     {drawing}
     <ul class="legend">
-      <li><i style="background:#ff6b6b"></i> Over 45 percent</li>
-      <li><i style="background:#ffc857"></i> 28 to 45 percent</li>
-      <li><i style="background:#2ee6c7"></i> 12 to 28 percent</li>
-      <li><i style="background:#3d5168"></i> Under 12 percent</li>
+      <li><i style="background:#ff6b6b"></i>Over 45%</li>
+      <li><i style="background:#ffc857"></i>28–45%</li>
+      <li><i style="background:#2ee6c7"></i>12–28%</li>
+      <li><i style="background:#3d5168"></i>Under 12%</li>
+      <li><i class="swatch-empty"></i>No data</li>
     </ul>
     <p class="note">Share of each state's goods exports that went to China, {
         _esc(states["window_label"])
@@ -369,18 +393,22 @@ def _grow(story: dict) -> str:
             f'aria-pressed="{"true" if selected else "false"}">{_esc(card["plain"])}</button>'
         )
         hidden = "" if selected else " hidden"
+        buyers = sorted(card["buyers"], key=lambda buyer: buyer["aud"], reverse=True)
         chart = charts.hbar(
             [
                 {
                     "label": buyer["label"],
                     "value": buyer["aud"],
                     "display": aud_text(buyer["aud"]),
-                    "swatch": "#ff6b6b" if buyer["code"] == "CHIN" else "#6cb6ff",
+                    "code": buyer["code"],
+                    "swatch": "#ffb020" if buyer["code"] == "CHIN" else "#6cb6ff",
+                    "label_fill": "#ffd27a" if buyer["code"] == "CHIN" else "#d5e2ef",
                 }
-                for buyer in card["buyers"]
+                for buyer in buyers
             ],
             chart_id=f"buyers-{card['sitc']}",
             colour_key="swatch",
+            sorted_desc=True,
         )
         if card["serious"]:
             takeaway = (
@@ -397,11 +425,11 @@ def _grow(story: dict) -> str:
 <div class="panel" data-panel-id="{card["sitc"]}"{hidden}>
   <h3>{_esc(takeaway)}</h3>
   {chart}
-  <p class="note">2025, the last finished year. China is in coral. Other buyers already taking the product are in blue.</p>
+  <p class="note">2025, the last finished year, largest buyer first. China is gold. Other buyers already taking the product are blue.</p>
   {
                 _values(
                     card["plain"] + " buyers in 2025",
-                    [[buyer["label"], aud_text(buyer["aud"])] for buyer in card["buyers"]],
+                    [[buyer["label"], aud_text(buyer["aud"])] for buyer in buyers],
                     ["Buyer", "Purchases"],
                 )
             }
@@ -447,7 +475,7 @@ def _recovery_kpis(recovery: dict) -> list[dict]:
         {
             "label": "Below the old average",
             "value": aud_text(recovery["shortfall_total"]),
-            "detail": "recorded sales during the blocked years",
+            "detail": "all eight blocked groups combined",
             "status": "down",
         },
         {
@@ -459,11 +487,36 @@ def _recovery_kpis(recovery: dict) -> list[dict]:
     ]
 
 
-def _loss_sentence(good: dict) -> str:
+def _loss_sentence(good: dict, total: float) -> str:
+    name = good["short"]
     gap = good.get("recorded_gap") or 0
+    scope = f"The {aud_text(total)} on the card above is every blocked group combined, not {name} alone."
     if gap <= 0:
-        return "Recorded sales in the blocked years stayed at or above the 2017–19 average."
-    return f"In the blocked years, recorded sales were {aud_text(gap)} below the 2017–19 average."
+        return (
+            f"Recorded {name} sales in the blocked years stayed at or above the 2017–19 average. "
+            + scope
+        )
+    return (
+        f"For {name} alone, recorded sales in the blocked years were {aud_text(gap)} "
+        f"below the 2017–19 average. " + scope
+    )
+
+
+def _zero_years(good: dict) -> tuple[int, int] | None:
+    years = [
+        int(point["year"])
+        for point in good["annual"]
+        if good["treat"] <= int(point["year"]) < good["lift"] and float(point["aud"]) <= 0
+    ]
+    if not years:
+        return None
+    return min(years), max(years)
+
+
+def _share_tick(value: float) -> str:
+    if abs(value - round(value)) < 0.05:
+        return f"{value:.0f}%"
+    return f"{value:.1f}%"
 
 
 def _kpis(items: list[dict]) -> str:
@@ -472,14 +525,25 @@ def _kpis(items: list[dict]) -> str:
         cards.append(
             f'<article class="kpi status-{item["status"]}">'
             f'<p class="kpi-label">{_esc(item["label"])}</p>'
-            f'<p class="kpi-value">{_esc(item["value"])}</p>'
-            f'<p class="kpi-detail">{_esc(item["detail"])}</p>'
+            f'<p class="kpi-value">{_esc(_compact_money(item["value"]))}</p>'
+            f'<p class="kpi-detail">{_esc(_compact_money(item["detail"]))}</p>'
             f"</article>"
         )
     return "".join(cards)
 
 
+def _compact_money(text: object) -> str:
+    """KPI cards use $191.9bn so the value stays on one line."""
+    value = str(text)
+    value = value.replace(" billion", "bn").replace(" million", "m").replace(" thousand", "k")
+    return value
+
+
 def _means(text: str) -> str:
+    old = "During the blocked years, recorded sales were "
+    new = "During the blocked years, recorded sales across all eight blocked groups were "
+    if old in text and "all eight blocked groups" not in text:
+        text = text.replace(old, new, 1)
     return f'<section class="means"><h2>What this means</h2><p>{_esc(text)}</p></section>'
 
 

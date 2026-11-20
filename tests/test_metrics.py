@@ -2,7 +2,7 @@ import pytest
 from hypothesis import given, settings
 from hypothesis import strategies as st
 
-from china_trade.metrics import hhi, scale_donors, shares, shock_value, top_share
+from china_trade.metrics import aud_compact, hhi, scale_donors, shares, shock_value, top_share
 
 
 def test_one_buyer_is_fully_concentrated():
@@ -15,6 +15,13 @@ def test_equal_buyers():
 
 def test_shock_is_a_tenth():
     assert shock_value(191.9e9, 0.10) == pytest.approx(19.19e9)
+
+
+def test_compact_money_fits_a_kpi():
+    assert aud_compact(191.9e9) == "$191.9bn"
+    assert aud_compact(19.2e9) == "$19.2bn"
+    assert aud_compact(173e6) == "$173m"
+    assert aud_compact(1.5e6) == "$1.5m"
 
 
 def test_scale_donors_matches_the_treated_level():

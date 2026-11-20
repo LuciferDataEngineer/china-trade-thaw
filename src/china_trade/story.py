@@ -369,8 +369,8 @@ def _recovery_story(goods, model, model_years, wheat) -> dict:
     )
     means = (
         "“Back” means 2025 sales reached at least 90 percent of the 2017–19 average. "
-        f"During the blocked years, recorded sales were {aud_text(shortfall_total)} "
-        f"below that old average. {biggest['short']} is most of it, "
+        f"During the blocked years, recorded sales across all eight blocked groups were "
+        f"{aud_text(shortfall_total)} below that old average. {biggest['short']} is most of it, "
         f"about {aud_text(biggest['recorded_gap'])}. "
         "A comparison with goods that were not blocked is in the method note. "
         "It also moves for wool, which was not blocked, so these pages use the recorded average."

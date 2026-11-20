@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ducklake
+    ports:
+      - "5432:5432"
+
+  rustfs:
+    image: rustfs/rustfs:latest
+    environment:
+      RUSTFS_ACCESS_KEY: rustfsadmin
+      RUSTFS_SECRET_KEY: rustfsadmin
+      RUSTFS_ADDRESS: 0.0.0.0:9000
+      RUSTFS_VOLUMES: /data
+    ports:
+      - "9000:9000"
+
+  pipeline:
+    build: .
+    volumes:
+      - ./site:/app/site
+      - ./INSIGHTS.md:/app/INSIGHTS.md
+      - ./data/snapshot:/app/data/snapshot:ro

@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest==9.2.0
+pytest-playwright==0.10.0
+hypothesis==6.170.17
+ruff==0.17.6
+testcontainers==4.15.0

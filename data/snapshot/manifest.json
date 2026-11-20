@@ -1,0 +1,280 @@
+{
+  "project": "china-trade-thaw",
+  "accessed_at": "2026-11-21T09:37:30+11:00",
+  "accessed_at_melbourne": "21 November 2026, 9:37 AM AEDT",
+  "note": "CI rebuilds from these parquet and GeoJSON files. It does not call ABS, the RBA or Natural Earth.",
+  "sources": [
+    {
+      "label": "ABS MERCH_EXP structure",
+      "url": "https://data.api.abs.gov.au/rest/dataflow/ABS/MERCH_EXP?references=all&detail=full",
+      "http_status": 200,
+      "bytes": 427107,
+      "sha256": "61862f6fff6725d9dc1833362950a5b5223ceb5e8d8d201ce016f262c3a4cdf0"
+    },
+    {
+      "label": "commodity_china",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/.CHIN.TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 3902110,
+      "sha256": "3dc40bc4ec8617baa37e7474af4e6ec95e139f6327b31c5da8bb8d4c2b2a9445"
+    },
+    {
+      "label": "commodity_world",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/.TOT.TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 4756260,
+      "sha256": "7e285eb8027d18d546caa849e5bbcc95bd30f22e9b47c40c2bb1a32861d9f33e"
+    },
+    {
+      "label": "partner_total",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/TOT..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 2840133,
+      "sha256": "57b7f71131e9d1d9703be782595abfa758a8f6b508e65693b1a7db565e69c79d"
+    },
+    {
+      "label": "state_partner",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/TOT..1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 6584674,
+      "sha256": "bf6d45d93f5fbea7e079df434b6d72c47d124b693b5d69bd1299388b479682f7"
+    },
+    {
+      "label": "focus 043",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/043..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 212398,
+      "sha256": "4586bf6c6e0d056aa26bb2269bd63122c7d4a2cde3b8f3d49e105dbe9f6bbc17"
+    },
+    {
+      "label": "focus state 043",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/043.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 38861,
+      "sha256": "64ec691215a1ce9eb69b238a109686f5b9e4ffcd456a17552015ad2951025465"
+    },
+    {
+      "label": "focus 112",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/112..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 1091226,
+      "sha256": "3cf85f23b8649f9f985c0c3dec66aa3da0dcec3831a72fa342c9c9726747ecff"
+    },
+    {
+      "label": "focus state 112",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/112.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 94220,
+      "sha256": "864afcab8df97c6a0c359a22b502a1bdcdf829716e903fb149c55f173d13bddd"
+    },
+    {
+      "label": "focus 321",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/321..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 367075,
+      "sha256": "86f48b2a4f1ce7e691dbfc538071814dbc5269fda9a4459e22f012e141f71a59"
+    },
+    {
+      "label": "focus state 321",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/321.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 32173,
+      "sha256": "ee108671569a2f6f10e96fdd413664c2875163ae446fe6e5b404ff73a5e0443e"
+    },
+    {
+      "label": "focus 036",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/036..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 342040,
+      "sha256": "96da8130e9a3fcbb3dc5fbaf2704cab3a3e5c14e82a04450242919f32dcd6f5d"
+    },
+    {
+      "label": "focus state 036",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/036.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 94402,
+      "sha256": "99c0b83eb115434fe92a9eef5aaa63ba950c53f14f153a19dad55bcff4f0a3c2"
+    },
+    {
+      "label": "focus 247",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/247..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 173908,
+      "sha256": "22a4ff1bdf01e173572a757d1c616ac8422e2e53168c5ed8cf1f26e58e271825"
+    },
+    {
+      "label": "focus state 247",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/247.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 77090,
+      "sha256": "c28d8e163f5689c80f4f26b7bde9661c53798309fdb39b9aa8ff776a21ee4cb1"
+    },
+    {
+      "label": "focus 011",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/011..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 859169,
+      "sha256": "b14ee2d3be44f6a96062df4be7a963cf6917dc0472666d1ec5d9843909eabbaf"
+    },
+    {
+      "label": "focus state 011",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/011.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 99620,
+      "sha256": "c045372f7180522cfdbbd3c6574a2953aa855a8148c5bf09c262bb85e463cd37"
+    },
+    {
+      "label": "focus 263",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/263..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 189655,
+      "sha256": "ffb818342c609dec5668af831bfcce58ffa31ac381f3fa23dba05c721551c0fe"
+    },
+    {
+      "label": "focus state 263",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/263.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 30287,
+      "sha256": "df48c958a9c6410141a3c1896a26851718edeeeea00cb15eab2cbe8cccd3ba8c"
+    },
+    {
+      "label": "focus 283",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/283..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 89165,
+      "sha256": "61d5ae53ddc8593ddad93fe12ce714dc15036df082272eec455c8f152bc578e3"
+    },
+    {
+      "label": "focus state 283",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/283.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 37603,
+      "sha256": "20e83a133aa20407129818e16d449980aae855248a4f9e40eaf3dab9313ce0bb"
+    },
+    {
+      "label": "focus 281",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/281..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 120182,
+      "sha256": "73006fd08c3d578564006a1b3fd173ed514a4a0a6c3222ddfae9e9fdb595833d"
+    },
+    {
+      "label": "focus state 281",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/281.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 55633,
+      "sha256": "cd3e881f91acf2a2c1d1a5c22d25f8a0c241993888f77a66952bd75d15750e97"
+    },
+    {
+      "label": "focus 268",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/268..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 314818,
+      "sha256": "55e8b15d859fe5bfd6c5274d93c56d383e26304454f283a7532957d8e9b25de1"
+    },
+    {
+      "label": "focus state 268",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/268.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 95206,
+      "sha256": "54f96a6d21dd9cc8b646dcfedb79ac6bc01992c2075c06878299470b97a7ce31"
+    },
+    {
+      "label": "focus 022",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/022..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 710497,
+      "sha256": "540ccddc45cdb19e43206d1a3a6d63c5d4b3b5dda9d211cafcc38fa4c84fe405"
+    },
+    {
+      "label": "focus state 022",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/022.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 93405,
+      "sha256": "1d1cb32e347af26cfb414325607efa5f801e96d414f9e3d96a113491a32cf56d"
+    },
+    {
+      "label": "focus 057",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/057..TOT.M?startPeriod=2006-01&format=csv",
+      "http_status": 200,
+      "bytes": 738872,
+      "sha256": "2b8f0faf07d756b75da1771d1a6a666d26553c70cf7213ff33edc707b3f9f9d5"
+    },
+    {
+      "label": "focus state 057",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,MERCH_EXP,1.0.0/057.CHIN+TOT.1+2+3+4+5+6+7+8.M?startPeriod=2015-01&format=csv",
+      "http_status": 200,
+      "bytes": 93420,
+      "sha256": "8ef51fec79d31fb2ffd0b878e963f3c46770a43a181b5255a3f35cb05e227e17"
+    },
+    {
+      "label": "ABS table 14a 2026-08",
+      "url": "https://www.abs.gov.au/statistics/economy/international-trade/international-trade-goods/aug-2026/5368014a.xlsx",
+      "http_status": 200,
+      "bytes": 553872,
+      "sha256": "dc3fb68cd64d0143c90f83bcaf85d343208f6cf01c686c28049d74a10ee4e8d8"
+    },
+    {
+      "label": "ABS table 14a 2026-09",
+      "url": "https://www.abs.gov.au/statistics/economy/international-trade/international-trade-goods/sep-2026/5368014a.xlsx",
+      "http_status": 200,
+      "bytes": 554937,
+      "sha256": "468c40eb6fe56cb97e838a53d04db0bd30c2152abd90b883e0d2de52dd98aae0"
+    },
+    {
+      "label": "RBA F11",
+      "url": "https://www.rba.gov.au/statistics/tables/csv/f11-data.csv",
+      "http_status": 200,
+      "bytes": 34242,
+      "sha256": "b27fce75b5197ada059a9ece17f128b70582b2a040340ae14ee5d5b428fe1cef"
+    },
+    {
+      "label": "RBA F11.1",
+      "url": "https://www.rba.gov.au/statistics/tables/csv/f11.1-data.csv",
+      "http_status": 200,
+      "bytes": 145386,
+      "sha256": "229e01a3ab724f350bc9c95d1fe51caf63ddbf4d7502bd935d59fe75673e9f16"
+    },
+    {
+      "label": "Natural Earth admin 1",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson",
+      "http_status": 200,
+      "bytes": 2325694,
+      "sha256": "69a0e06e640b2d505858ae1cb63034e4677f3000b35a98e16312932b98c426b9"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/snapshot/merch_month.parquet",
+      "bytes": 2216745,
+      "sha256": "4dec0ca5ba89ef1f67beb4d696e20696742411dad8e0f3357d0c62b3c8345e98"
+    },
+    {
+      "path": "data/snapshot/country_vintage.parquet",
+      "bytes": 26241,
+      "sha256": "b34297e9a86478963726f251215248a91e6ecc1fe430075ef90b9fb49fab3bcc"
+    },
+    {
+      "path": "data/snapshot/fx_daily.parquet",
+      "bytes": 18545,
+      "sha256": "888f54e1286eaf864955104a8b86d8463690137800e3e325d291e19e3e8c9d60"
+    },
+    {
+      "path": "data/snapshot/labels.parquet",
+      "bytes": 19028,
+      "sha256": "5603de1a1728c75728b4ed8441e6baf2909626d96d9155a487e6af1632ce43a5"
+    },
+    {
+      "path": "data/snapshot/au_states.geojson",
+      "bytes": 43987,
+      "sha256": "cbe84ea12dc0bee2769567ec270ee9507bfc4b81dc7b600814a2cb89efac8bf7"
+    }
+  ],
+  "row_counts": {
+    "merch_month": 382182,
+    "country_vintage": 16445,
+    "fx_daily": 1133,
+    "labels": 622,
+    "au_states": 8
+  }
+}
